@@ -5,11 +5,12 @@ class School
   def initialize(name)
     @name = name
     @roster = {}
+    @size = 0
   end
   def add_student(name,number)
     @roster[number] = []
-    size = @roster[number].length
-    puts "#{size}"
-    @roster[number][size] = name
+    puts "#{@size}"
+    @roster[number][@size] = name
+    @size += 1
   end
 end

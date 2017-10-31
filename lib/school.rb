@@ -23,5 +23,6 @@ class School
       sorted[grade] = []
       sorted[grade] << @roster[grade].sort
     end
+    sorted
   end
 end

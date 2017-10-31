@@ -9,6 +9,7 @@ class School
   def add_student(name,number)
     @roster[number] = []
     size = @roster[number].length
+    puts "#{size}"
     @roster[number][size] << name
   end
 end

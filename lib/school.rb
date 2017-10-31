@@ -10,6 +10,6 @@ class School
     @roster[number] = []
     size = @roster[number].length
     puts "#{size}"
-    @roster[number][size] << name
+    @roster[number][size] = name
   end
 end

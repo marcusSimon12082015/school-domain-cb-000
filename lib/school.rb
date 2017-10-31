@@ -7,6 +7,6 @@ class School
     @roster = {}
   end
   def add_student(name,number)
-    @roster[number] << name
+    @roster[number] = [].push(name)
   end
 end

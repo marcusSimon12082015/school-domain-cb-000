@@ -18,8 +18,9 @@ class School
     @roster[number]
   end
   def sort
+    sorted = {}
     @roster.map do |grade, students|
-      @roster[grade] <<@roster[grade].sort
+      sorted[grade] <<@roster[grade].sort
     end
   end
 end

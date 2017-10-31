@@ -18,11 +18,6 @@ class School
     @roster[number]
   end
   def sort
-    sorted = {}
-    @roster.each do |grade, students|
-      sorted[grade] = []
-      sorted[grade] << @roster[grade].sort
-    end
-    sorted
+    @roster.sort_by{ |grade, name| name }
   end
 end

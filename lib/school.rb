@@ -8,7 +8,7 @@ class School
   end
   def add_student(name,number)
     @roster[number] = []
-    @roster[number].unshift(name)
-    puts "#{@roster[number].inspect}"
+    size = @roster[number].length
+    @roster[number][size] << name
   end
 end

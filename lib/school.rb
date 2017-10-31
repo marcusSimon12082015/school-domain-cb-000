@@ -7,8 +7,11 @@ class School
     @roster = {}
   end
   def add_student(name,number)
-    @roster[number] = []
-    @roster[number] << name
-    @roster[number].inspect
+    if @roster.key?("number")
+      @roster[number] << name
+    else
+      @roster[number] = []
+      @roster[number] << name
+    end
   end
 end

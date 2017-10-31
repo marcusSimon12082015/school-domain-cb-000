@@ -7,7 +7,7 @@ class School
     @roster = {}
   end
   def add_student(name,number)
-    if @roster.key?("number")
+    if @roster.key?(number)
       puts "Key obstaja!"
       @roster[number] << name
     else

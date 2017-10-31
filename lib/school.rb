@@ -8,6 +8,6 @@ class School
   end
   def add_student(name,number)
     @roster[number] = []
-    @roster[number].shift(name)
+    @roster[number] << name
   end
 end

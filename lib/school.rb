@@ -18,8 +18,8 @@ class School
     @roster[number]
   end
   def sort
-    @roster.sort_by{|grade, names|
+    @roster.map do |grade, names|
       names.inspect
-    }
+    end
   end
 end

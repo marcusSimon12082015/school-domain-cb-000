@@ -19,7 +19,7 @@ class School
   end
   def sort
     @roster.map do |grade, names|
-      names.inspect
+      names.sort
     end
   end
 end

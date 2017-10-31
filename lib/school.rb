@@ -10,5 +10,6 @@ class School
     @roster[number] = []
     @roster[number] << name
     puts "#{@roster[number][0]}"
+    puts "#{@roster[number].length}"
   end
 end

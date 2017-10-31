@@ -17,4 +17,7 @@ class School
   def grade(number)
     @roster[number]
   end
+  def sort
+    @roster.keys.sort
+  end
 end
